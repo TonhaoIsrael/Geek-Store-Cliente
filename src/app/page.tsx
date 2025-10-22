@@ -27,7 +27,8 @@ export default function Home() {
         .then(r => r.json())
         .then(logaCliente)
     }
-  }, [])
+  }, [logaCliente])
+  
 
   const itensExibidos = mostrarDestaques ? items.filter(i => i.destaque) : items
 
