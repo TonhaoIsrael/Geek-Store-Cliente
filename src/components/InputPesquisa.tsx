@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 import { ItemI } from "@/utils/types/items"
 import { useForm } from "react-hook-form"

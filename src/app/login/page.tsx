@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+
 "use client"
 import { useForm } from "react-hook-form"
 import { toast } from "sonner"

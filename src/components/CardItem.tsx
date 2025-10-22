@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+
 import { ItemI } from "@/utils/types/items"
 import Link from "next/link"
 
