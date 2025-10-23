@@ -19,7 +19,7 @@ export default function Detalhes() {
 
   useEffect(() => {
     async function buscaDados() {
-      const response = await fetch(`https://geek-store-delta.vercel.app/items/${params.item_id}`)
+      const response = await fetch(`${process.env.NEXT_PUBLIC_URL_API}/items/${params.item_id}`)
       const dados = await response.json()
       setItem(dados)
     }
@@ -38,7 +38,7 @@ export default function Detalhes() {
   ))
 
   async function enviaProposta(data: Inputs) {
-    const response = await fetch(`https://geek-store-delta.vercel.app/propostas`, {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_URL_API}/propostas`, {
       headers: { "Content-Type": "application/json" },
       method: "POST",
 
